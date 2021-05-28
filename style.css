@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Akaya Telivigala', cursive;
+}
+div#menu {
+    position: fixed;
+    width: 100%;
+    }
+#menu ul {
+    background: #34495e;
+    text-align: center;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin-left: -4px;
+    border-right: 1px solid #ddd;
+   
+}
+#menu ul li:nth-child(1){
+   border-left:1px solid #ddd
+}
+
+#menu ul li a {
+
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 13px 20px;
+    transition: .5s;
+}
+
+#menu ul li:hover > a {
+    background: #2c3e50;
+}
+/*DropDown Menu Start*/
+#menu ul li{              
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#menu ul li ul{
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    width:190px;
+    transition: .5s;
+}
+#menu ul li ul li{
+    background: #34495e;
+    border-bottom:1px solid #ddd;
+    display: block;
+    margin-left:0px;
+}
+#menu ul li ul li:nth-child(1){
+    border-top: 1px solid #ddd;
+}
+#menu ul li ul li a {
+    display: block;
+}
+/*Hover Part*/
+
+#menu ul li ul{
+   opacity: 0;
+   visibility: hidden;
+   transform: scaleY(0);
+   transform-origin:top center;
+}
+#menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+   
+}
+#menu ul li ul li :hover{
+  color: #b53471;
+}
+
+
+/* Web */
+
+.fullWebsite {
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    margin: auto;
+}
+
+.bannar img {
+    margin-top: 15px;
+    width: 100%;
+    height: 450px;
+    margin: -7px;
+}
+.mypic img {
+    position: absolute;
+    top: 115px;
+    left: 690px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.name h2 {
+    position: relative;
+    top: 290px;
+    color: #B53471;
+    font-size: 43px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+.name p{
+    position: absolute;
+    color: #b53471;
+    width: 524px;
+    top: 347px;
+    background: #8681be;
+    left: 495px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+
+.contentpad {
+    color: white;
+    background: #34495e;
+    padding: 20px;
+}
+.contentpad p{
+    margin-top: 15px;
+}
+/* Button */
+.button{
+        text-align: center;
+        margin-top: 100px;
+}
+.link{
+    background: #7f8c8d;
+    padding: 14px 20px;
+    margin-top: 10px;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 30px;
+    display: inline-block;
+    color:   #b53471;
+    text-decoration: none;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.link::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #34495e;
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s;
+    z-index: -1;
+}
+.link:hover::before{
+    width: 100%;
+  
+}
+/* Block Service */
+#allBlock{
+    background: #34495e;
+    border-top: 1px Solid #ddd;
+}
+#allBlock p{
+    font-family: 'Akaya Telivigala', cursive;
+    color: #ffa500;
+    font-size: 24px;
+}
+#block{
+	text-align:center;
+	width: 310px;
+	background:#7f8c8d;
+	border:1px solid orange;
+	display:inline-block;
+	margin: 20px;
+	padding: 75px;
+	border-radius: 10px;
+	
+	}
+    #block p {
+        color: #ddd;
+    }
+    #title{
+        padding-bottom:10px;
+        padding-top:10px;
+        color: #ddd;
+        font-family: sans-serif;
+        }
+	#block:hover{
+	transition: 0.9s;
+	cursor:pointer;
+	transform:translateY(-10px);
+	background:transparent;
+	}
+	
+	#icon{
+	font-size:35px;
+	text-align:center;
+	color:orange;
+	background:#eae7e6;   
+	padding-left: 15px;
+    padding-right: 15px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border:1px solid orange;
+	animation-name:myblock;
+	animation-duration:1s;
+	}
+
+
+	.block p{
+	color:#888;
+	width:300px;
+	}
+	@keyframe myblock{
+		from{transform scale(0.1)}
+		to{transform scale(1)}
+	}
+/* skill */
+.body{
+    background: rgba(52 73 94);
+    list-style: none;
+    font-family: sans-serif;
+}
+.Skill {
+    width: 500px;
+    margin: auto;
+    color: #ddd;
+}
+.Skill  h1{
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+.Skill  h3{
+    font-family: 'Akaya Telivigala', cursive;
+}
+.Skill li{
+    padding: 10px;
+}
+.bar {
+    background: #334160;
+    display: block;
+    height: 6px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}.bar span {
+    height: 2px;
+    float: left;
+    background: #2187e7;
+}
+
+.html {
+    width: 90%;
+    animation: html 2s;
+}.css {
+    width: 70%;
+    animation: css 2s;
+}.Bootstrap5 {
+    width: 89%;
+    animation: Bootstrap5 2s;
+}.WordPress {
+    width: 53%;
+    animation: WordPress 2s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }  100%{
+        width: 90%;
+    }
+}@keyframes css{
+    0%{
+        width: 0%;
+    }  100%{
+        width: 70%;
+    }
+}
+@keyframes Bootstrap5{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 75;
+    }
+}
+@keyframes WordPress{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+/* Social Menu */
+	.SocialMenu{
+    border-top: 1px solid #ddd;
+}
+	.SocialMenu ul{
+    background: #34495e;
+    height: 150px;
+    margin-top: 0px;
+}
+	.SocialMenu ul li{
+    display: inline-block;
+    padding-top: 55px;
+    margin-left: -6px;
+}
+	.SocialMenu ul li a{
+    color: #2c3e50;
+    background: #7f8c8d;
+    font-size: 35px;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 22px;
+    transition: .5s;
+  
+}
+.SocialMenu ul li a:hover{
+    background: #2c3e50;
+    color: #ddd;
+}
+/* Footer */
+
+.fotter {
+    color: #95a5a6;
+    background: #34495e;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.bottomFotter {
+    background: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+}
+
