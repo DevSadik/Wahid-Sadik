@@ -1,2 +1,0 @@
-# Wahid-Sadik
-My Protfolio
